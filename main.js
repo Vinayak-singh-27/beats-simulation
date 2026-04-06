@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 
 const container=document.getElementById("canvas-container");
 const panel=document.getElementById("controlPanel");
@@ -126,7 +127,10 @@ function updateSignal(text){
   ctx.fillText(text,256,150);
   tex.needsUpdate=true;
 }
+const dracoLoader = new DRACOLoader();
+dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
 
+loader.setDRACOLoader(dracoLoader);
 /* CAR SYSTEM */
 const loader=new GLTFLoader();
 let cars=[];
