@@ -1,0 +1,90 @@
+body{
+  margin:0;
+  background:#050505;
+  font-family:'Orbitron',sans-serif;
+  color:#00ff88;
+  overflow:hidden;
+}
+
+.dashboard-title{
+  position:fixed;
+  top:5px;
+  left:20px;
+  font-size:28px;
+  font-weight:900;
+  letter-spacing:4px;
+  color:#00ff88;
+  text-shadow:0 0 15px #00ff88;
+  z-index:20;
+}
+
+.top-nav{
+  position:fixed;
+  top:45px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:10px;
+  background:#111;
+  border-bottom:2px solid #00ff88;
+  z-index:15;
+}
+
+.top-nav button{
+  background:black;
+  border:2px solid #00ff88;
+  color:#00ff88;
+  padding:8px 16px;
+  cursor:pointer;
+  font-family:'Orbitron',sans-serif;
+  font-weight:700;
+  box-shadow:0 0 10px #00ff88;
+  transition:0.3s;
+}
+
+.top-nav button:hover{
+  background:#00ff88;
+  color:black;
+}
+
+.main-layout{
+  display:flex;
+  height:100vh;
+  padding-top:100px;
+}
+
+.control-panel{
+  width:280px;
+  background:#111;
+  padding:20px;
+  border-right:2px solid #00ff88;
+  box-shadow:inset 0 0 20px #00ff88;
+  overflow:auto;
+}
+
+.control-panel h3{
+  margin-top:15px;
+}
+
+.control-panel button{
+  width:100%;
+  margin:6px 0;
+  padding:8px;
+  background:black;
+  border:2px solid #00ff88;
+  color:#00ff88;
+  font-family:'Orbitron',sans-serif;
+  cursor:pointer;
+}
+
+.intersection{
+  flex:1;
+  position:relative;
+  height:100%;
+}
+
+#canvas-container{
+  width:100%;
+  height:100%;
+}
